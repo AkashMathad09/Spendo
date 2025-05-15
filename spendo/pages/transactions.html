@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transactions - Spendo</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="title">
+      <h1>Transactions</h1>
+      <p>History of Expenses & Rewards</p>
+    </div>
+    <div class="profile-container">
+      <div class="profile-icon">
+        <img src="https://i.pravatar.cc/40" alt="Profile" />
+      </div>
+      <div class="profile-menu">
+        <a href="profile.html">My Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section-title">
+      <h2>Recent Transactions</h2>
+    </section>
+
+    <section class="transaction-list">
+      <div class="transaction-item expense">
+        <div class="icon"><span class="material-icons">shopping_cart</span></div>
+        <div class="details">
+          <p>Groceries</p>
+          <small>May 15, 2025</small>
+        </div>
+        <div class="amount">-₹750</div>
+      </div>
+
+      <div class="transaction-item reward">
+        <div class="icon"><span class="material-icons">emoji_events</span></div>
+        <div class="details">
+          <p>Reward for Rule Following</p>
+          <small>May 14, 2025</small>
+        </div>
+        <div class="amount reward-amt">+₹50</div>
+      </div>
+
+      <div class="transaction-item expense">
+        <div class="icon"><span class="material-icons">local_cafe</span></div>
+        <div class="details">
+          <p>Coffee</p>
+          <small>May 13, 2025</small>
+        </div>
+        <div class="amount">-₹120</div>
+      </div>
+
+      <div class="transaction-item expense">
+        <div class="icon"><span class="material-icons">local_mall</span></div>
+        <div class="details">
+          <p>Amazon Purchase</p>
+          <small>May 12, 2025</small>
+        </div>
+        <div class="amount">-₹1,999</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Nav -->
+  <nav class="bottom-nav">
+    <div class="nav-item" onclick="location.href='../index.html'">
+      <span class="material-icons">home</span>
+      <p>Home</p>
+    </div>
+    <div class="nav-item active" onclick="location.href='transactions.html'">
+      <span class="material-icons">swap_horiz</span>
+      <p>Transactions</p>
+    </div>
+    <div class="nav-item" onclick="location.href='scan.html'">
+      <span class="material-icons">qr_code_scanner</span>
+      <p>Scan</p>
+    </div>
+    <div class="nav-item" onclick="location.href='rewards.html'">
+      <span class="material-icons">emoji_events</span>
+      <p>Rewards</p>
+    </div>
+    <div class="nav-item" onclick="location.href='settings.html'">
+      <span class="material-icons">settings</span>
+      <p>Settings</p>
+    </div>
+  </nav>
+
+</body>
+</html>

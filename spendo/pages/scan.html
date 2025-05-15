@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spendo - Scan</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="\styles.css" />
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Spendo</h1>
+      <p>Scan & Pay</p>
+    </div>
+    <div class="profile-container">
+      <div class="profile-icon" id="profileIcon">
+        <img src="https://i.pravatar.cc/40" alt="Profile" />
+      </div>
+      <div class="profile-menu" id="profileMenu">
+        <a href="profile.html">My Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="card" style="flex-direction: column; align-items: center; text-align: center;">
+      <span class="material-icons" style="font-size: 60px; color: #2196f3;">qr_code_scanner</span>
+      <div style="margin-top: 1rem;">
+        <div class="card-title">Scan QR to Pay</div>
+        <p style="color: #666; margin-top: 0.5rem;">Use your camera to scan a UPI QR code and instantly pay via Spendo.</p>
+        <button onclick="alert('Launching camera...')" style="margin-top: 1rem; padding: 0.75rem 1.5rem; font-size: 1rem; background-color: #2196f3; color: #fff; border: none; border-radius: 6px; cursor: pointer;">Open Scanner</button>
+      </div>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <div class="nav-item" onclick="location.href='../index.html'">
+      <span class="material-icons">home</span>
+      Home
+    </div>
+    <div class="nav-item" onclick="location.href='transactions.html'">
+      <span class="material-icons">swap_horiz</span>
+      Transactions
+    </div>
+    <div class="nav-item active" onclick="location.href='scan.html'">
+      <span class="material-icons">qr_code_scanner</span>
+      Scan
+    </div>
+    <div class="nav-item" onclick="location.href='rewards.html'">
+      <span class="material-icons">emoji_events</span>
+      Rewards
+    </div>
+    <div class="nav-item" onclick="location.href='settings.html'">
+      <span class="material-icons">settings</span>
+      Settings
+    </div>
+  </nav>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
